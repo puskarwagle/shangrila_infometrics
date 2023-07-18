@@ -1,0 +1,48 @@
+/* language on off toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3vw;
+    height: 2vw;
+    background-color: rgba(220, 218, 218, 0.25);
+    border-radius: 0vw;
+    transition: all 0.3s;
+    margin-left: auto;
+    margin-right: 1rem;
+    border: 1px solid rgba(159, 159, 159, 0.25);
+}
+
+.switch:after {
+    content: '';
+    position: absolute;
+    width: 1.5vw;
+    height: 100%;
+    /* border-radius: 1.6vw; */
+    /* background-color: #42BC7D; */
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+    border: 0px solid red;
+    background-image: url("./english.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input[type='checkbox']:checked+.switch:after {
+    transform: translateX(1.5vw);
+    border: 0px solid blue;
+    background-image: url("./nepal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+input[type='checkbox']:checked+.switch {
+    background-color: rgba(220, 218, 218, 0.25);
+}
+
+.offscreen {
+    position: absolute;
+    left: -999999px;
+}
