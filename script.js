@@ -1,3 +1,16 @@
+// Toggle language toggle image
+const languageToggle = document.getElementById('language-toggle');
+const languageImage = document.getElementById('languageImage');
+
+function toggleLanguage() {
+    if (languageToggle.checked) {
+        languageImage.src = './images/english.png';
+    } else {
+        languageImage.src = './images/nepal.png';
+    }
+}
+languageToggle.addEventListener('change', toggleLanguage);
+
 // Happy Clients Carousel
 const happyImages = ['./images/erp.png', './images/eye.png', './images/logo.png'];
 

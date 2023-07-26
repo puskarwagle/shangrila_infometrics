@@ -1,105 +1,134 @@
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 .mycarousel {
-    display:none !important;
+    display: none !important;
 }
+
 .shadow-my {
-    -webkit-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 4px 5px 1px rgba(0, 0, 0, 0.75);
 }
+
 .carouselButton {
-    color:white;
+    color: white;
     border-radius: 50%;
     background-color: #0096DB;
-    padding:1rem;
+    padding: 1rem;
     font-size: 1.5rem;
     font-weight: 100 !important;
 }
+
 #sec6 .cardtext {
     line-height: 200%;
     font-size: smaller;
 }
+
 .border-my {
     border-bottom: 2px solid #42BC7D;
     padding-bottom: .5rem !important;
 }
+
 .largeCarousel {
     display: flex;
 }
+
 /* Small screen  */
 @media only screen and (max-width: 991px) {
     h1 {
         font-weight: bolder;
     }
+
     .mycarousel {
-        display:flex !important;
+        display: flex !important;
     }
+
     .largeCarousel {
         display: none;
     }
+
     #empLogin {
         display: none;
     }
+
     #toggle {
         display: none;
     }
 
     .navbar-brand {
         order: 1;
+        margin-left: auto;
+    }
+    .toggleContainer {
+        order:3;
     }
     #sec2 h1 {
         text-shadow: 2px 2px #000000;
         margin-bottom: 2rem;
     }
+
     #sec2 p {
         line-height: 220%;
         margin-bottom: 2rem;
         text-align: left;
     }
+
     #sec3 p {
         line-height: 220%;
     }
+
     #sec4 .whoarewe {
         text-align: center;
     }
+
     #sec4 .who {
         margin-bottom: 3rem;
         font-weight: 900;
     }
+
     #sec4 .who, p {
         text-align: center;
     }
+
     #sec4 .numbers {
         flex-direction: column;
         gap: 2rem;
     }
+
     #sec4 .numbers div .text-warning {
         font-size: 2rem;
     }
+
     #sec4 .images img {
         display: none;
     }
+
     #sec6 .mycards {
         flex-direction: column;
         padding: 1rem;
     }
+
     #sec6 .mycards .thiscard {
         gap: 3rem;
     }
+
     #sec6 .cardtext {
         line-height: 200%;
     }
+
     #sec6 .cardtext .h5 {
         font-weight: 600;
         margin-bottom: 2rem;
     }
+
     footer {
         flex-direction: column;
         gap: 3rem;
         padding-bottom: 4rem;
     }
+
     footer .icons i {
         font-size: 1.5rem;
     }
@@ -132,50 +161,69 @@ box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
 
 
 /* language on off toggle */
-.switch {
-    position: relative;
+.toggleContainer {
+    margin-right: 5px;
+}
+.language-switch {
     display: inline-block;
+    position: relative;
     width: 3vw;
-    height: 2vw;
-    background-color: rgba(220, 218, 218, 0.25);
-    border-radius: 0vw;
-    transition: all 0.3s;
-    margin-left: auto;
-    margin-right: 1rem;
-    border: 1px solid rgba(159, 159, 159, 0.25);
+    height: 1.5vw;
 }
 
-.switch:after {
-    content: '';
+.language-switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.language-switch label {
     position: absolute;
-    width: 1.5vw;
-    height: 100%;
-    /* border-radius: 1.6vw; */
-    /* background-color: #42BC7D; */
     top: 0;
     left: 0;
-    transition: all 0.3s;
-    border: 0px solid red;
-    background-image: url("./english.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    right: 0;
+    bottom: 0;
+    background-color: #0096DB;
+    border-radius: 2vw;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.2vw;
 }
-
-input[type='checkbox']:checked+.switch:after {
-    transform: translateX(1.5vw);
-    border: 0px solid blue;
-    background-image: url("./nepal.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.language-label {
+    font-size: 1vw;
+    color: white;
+    transition: opacity 0.4s;
 }
-
-input[type='checkbox']:checked+.switch {
-    background-color: rgba(220, 218, 218, 0.25);
-}
-
-.offscreen {
+/* Ball  */
+.language-switch label:before {
+    content: '';
     position: absolute;
-    left: -999999px;
+    top: 0.1vw;
+    left: 0.1vw;
+    width: 1vw;
+    height: 1.3vw;
+    background-color: white;
+    border-radius: 60%;
+    transition: transform 0.4s;
+}
+
+.language-switch input:checked+label:before {
+    transform: translateX(1.8vw);
+}
+.language-switch label .language-label:nth-child(1) {
+    opacity: 0;
+}
+.language-switch input:checked+label .language-label:nth-child(1) {
+    opacity: 1;
+}
+.language-switch input:checked+label .language-label:nth-child(2) {
+    opacity: 0;
+}
+
+/* Optional styles to make the toggle switch look more like a button */
+.language-switch label:active {
+    background-color: #45a049;
 }
