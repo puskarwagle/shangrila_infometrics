@@ -36,7 +36,11 @@
 .largeCarousel {
     display: flex;
 }
-
+.whoarewe img {
+    display: none;
+    border-radius:5px;
+    border:2px solid rgb(255,193,7);
+}
 
 /* Small screen  */
 @media only screen and (max-width: 991px) {
