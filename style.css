@@ -16,11 +16,13 @@
     color: white;
     border-radius: 50%;
     background-color: #0096DB;
-    padding: 1rem;
     font-size: 1.5rem;
+    display: flex;
     font-weight: 100 !important;
 }
-
+.carouselButton i {
+    margin:0.5rem;
+}
 #sec6 .cardtext {
     line-height: 200%;
     font-size: smaller;
@@ -34,6 +36,7 @@
 .largeCarousel {
     display: flex;
 }
+
 
 /* Small screen  */
 @media only screen and (max-width: 991px) {
