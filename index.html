@@ -16,7 +16,10 @@
         crossorigin="anonymous"></script>
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +33,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul style="margin-left:auto;" class="navbar-nav mr-auto">
+            <ul style="margin-left:auto;" class="navbar-nav mr-auto gap-2">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home</a>
                 </li>
@@ -53,16 +56,16 @@
             <input type="checkbox" id="toggle" class="offscreen" />
             <label for="toggle" class="switch"></label>
         </div>
-        <button id="empLogin" style="background-color: #0096DB;color:#ffffff;" class="btn">Employee Login</button>
+        <button id="empLogin" style="background-color: #0096DB;color:#ffffff;font-size: smaller;" class="btn">Employee Login</button>
     </nav>
 
     <main>
         <section id="sec1" class="p-1 ps-4 text-white" style="background-color: #0096DB;">News 1</section>
 
-        <section id="sec2" class="text-white p-3" style="background-image: url(./images/world.jpg);">
+        <section id="sec2" class="text-white p-3 pt-5" style="background-image: url(./images/world.jpg);background-size: cover;">
             <div class="jumbotron col-md-10">
                 <h1>Working towards the excellence in ensuring the Digital Governance in Nepal</h1>
-                <p class="col-md-8 mt-2">The Government of Nepal has introduced e-Governance
+                <p class="col-md-8">The Government of Nepal has introduced e-Governance
                     to improve the administration of government
                     services and the relationship between public servants and the wider society.</p>
             </div>
@@ -70,63 +73,53 @@
         </section> <!-- Working Towards -->
 
         <section id="sec3" class="text-center mt-5">
-            <span class="h1 border-bottom border-success border-3">About us</span>
+            <span class="h1 border-my">About us</span>
             <p class="p-5">The Government of Nepal has introduced e-Governance to improve the administration of
                 government services and the relationship between public servants and the wider society.</p>
         </section> <!-- About Us -->
 
         <section id="sec4" class="mb-5 d-flex">
-            <div class="ps-5 col-md-7">
-                <div class="whoarewe">
-                    <span class="h1 who text-center">Who we are?</span>
-                    <p class="mt-3">Aenean faucibus ultricies erat nec rhoncus. Maecenas bibendum metus
-                        eros, sed
-                        elementum justo
-                        fringilla non. Donec porta a magna ac cursus. Sed quis erat ut leo vulputate laoreet. Aliquam
-                        euismod purus vel libero egestas, ac rhoncus erat hendrerit. Praesent eleifend arcu eget ex
-                        dictum
-                        interdum. Aliquam ut scelerisque magna. Nunc justo elit, posuere venenatis tincidunt nec, congue
-                        sollicitudin est. Sed in est pellentesque, porttitor purus a, accumsan est. Aliquam venenatis
-                        venenatis dictum. Suspendisse et ex nunc. Duis semper condimentum mi sed scelerisque. Etiam
-                        rhoncus
-                        odio sit amet nibh interdum placerat. </p>
+            <div class="col-md-7">
+                <div class="whoarewe p-3">
+                    <p class="h1 who">Who we are?</p>
+                    <p class="mt-3">Aenean faucibus ultricies erat nec rhoncus. Maecenas bibendum metus eros, sed elementum justo fringilla non. Donec porta a magna ac cursus. Sed quis erat ut leo vulputate laoreet. Aliquam euismod purus vel libero egestas, ac rhoncus erat hendrerit. Praesent eleifend arcu eget ex dictum interdum. Aliquam ut scelerisque magna. Nunc justo elit, posuere venenatis tincidunt nec, congue sollicitudin est. Sed in est pellentesque, porttitor purus a, accumsan est. Aliquam venenatis venenatis dictum. Suspendisse et ex nunc. Duis semper condimentum mi sed scelerisque. Etiam rhoncus odio sit amet nibh interdum placerat. </p>
                 </div>
-                <div class="numbers d-flex justify-content-between mt-5">
+                <div class="numbers d-flex justify-content-between mt-5 p-3">
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">29+</span>
-                        <span style="font-weight: 600;" class="text-primary">Years in Business</span>
+                        <span class="text-primary text-nowrap">Years in Business</span>
                     </div>
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">200+</span>
-                        <span style="font-weight: 600;" class="text-primary">Numbers of Employees</span>
+                        <span class="text-primary text-nowrap">Numbers of Employees</span>
                     </div>
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">753+</span>
-                        <span style="font-weight: 600;" class="text-primary">Service Installation</span>
+                        <span class="text-primary text-nowrap">Service Installation</span>
                     </div>
                 </div>
             </div>
-            <div class="images col-md-5 border" style="position:relative;">
-                <img style="border-radius:5px;border:2px solid rgb(34, 15, 157);position:absolute;top:0%;left:10%;width:259.704px;height:173.136px; z-index:4;"
-                    src="https://source.unsplash.com/Ao8x-IhO8hc" class="" alt="">
+            <div class="images col-md-5" style="position:relative;">
+                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:0%;left:10%;width:259.704px;height:173.136px; z-index:4;"
+                    src="https://source.unsplash.com/Ao8x-IhO8hc" alt="">
                 <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:40%;left:5%;width:259.704px;height:173.136px;"
-                    src="https://source.unsplash.com/uIjLT4VXFIU" class="" alt="">
+                    src="https://source.unsplash.com/uIjLT4VXFIU" alt="">
                 <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;left:30%;top:25%;width:50%;height:75%;"
-                    src="https://source.unsplash.com/ikJ60IPOxKw" class="" alt="">
+                    src="https://source.unsplash.com/ikJ60IPOxKw" alt="">
             </div>
         </section> <!-- Who we are ? -->
 
         <section id="sec5" class="text-center text-white p-5"
             style="background-image: url(https://source.unsplash.com/3tYZjGSBwbk);">
-            <span class="h1 border-bottom border-success border-3">Our Services</span>
+            <span class="h1 border-my">Our Services</span>
             <p class="mt-5">The Government of Nepal has introduced e-Governance to improve the administration of
-                government
-                services and the relationship between public servants and the wider society.</p>
+                government services and the relationship between public servants and the wider society.</p>
         </section> <!-- Our Services -->
 
         <section id="sec6" class="mb-5">
             <div class="mycards d-flex gap-3 pb-5 pt-3 justify-content-around" style="background-color: #E5F4FB;">
-                <div class="thiscard col-md-3 shadow-lg bg-white text-center rounded p-2">
+                
+                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/erp.png" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">MUN ERP</p>
@@ -134,7 +127,7 @@
                             title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="thiscard col-md-3 shadow bg-white text-center rounded p-2">
+                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/eye.png" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">PMIS</p>
@@ -142,7 +135,7 @@
                             title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="thiscard col-md-3 shadow bg-white text-center rounded p-2">
+                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/python.svg" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">PPIS</p>
@@ -152,9 +145,10 @@
                 </div>
             </div> <!-- Services -->
 
+            <!-- Our Happy Clients -->
             <div class="p-5 clients text-center" style="background-color: #EAEFFC;">
-                <span class="h1 border-bottom border-success border-3">Our Happy Clients</span>
-                <div class="d-flex justify-content-between align-items-center mt-5">
+                <span class="h1 border-my">Our Happy Clients</span>
+                <div class="mycarousel justify-content-between align-items-center mt-5">
                     <div class="carouselButton happyPrev">
                         <i class="fas fa-angle-double-left"></i>
                     </div>
@@ -166,12 +160,19 @@
                         <i class="fas fa-angle-double-right"></i>
                     </div>
                 </div>
+                <div class="largeCarousel justify-content-between mt-5">
+                    <img src="./images/embelm.png" height="120" alt="" class="">
+                    <img src="./images/embelm.png" height="120" alt="" class="">
+                    <img src="./images/embelm.png" height="120" alt="" class="">
+                    <img src="./images/embelm.png" height="120" alt="" class="">
+                    <img src="./images/embelm.png" height="120" alt="" class="">
+                </div>
             </div> <!-- Our Happy Clients -->
         </section> <!-- Services and Happy clients -->
 
-        <section id="sec7" class="container techPartners text-center mb-5 pe-5 ps-5">
-            <span class="h1 border-bottom border-success border-3">Technology Partners</span>
-            <div class="d-flex justify-content-between align-items-center mt-5">
+        <section id="sec7" class="techPartners text-center mb-5 pe-5 ps-5">
+            <span class="h1 border-my">Technology Partners</span>
+            <div class="mycarousel justify-content-between align-items-center mt-5">
                 <div class="carouselButton techPrev">
                     <i class="fas fa-angle-double-left"></i>
                 </div>
@@ -183,13 +184,20 @@
                     <i class="fas fa-angle-double-right"></i>
                 </div>
             </div>
+            <div class="largeCarousel justify-content-between mt-5">
+                <img src="./images/embelm.png" height="120" alt="" class="">
+                <img src="./images/embelm.png" height="120" alt="" class="">
+                <img src="./images/embelm.png" height="120" alt="" class="">
+                <img src="./images/embelm.png" height="120" alt="" class="">
+                <img src="./images/embelm.png" height="120" alt="" class="">
+            </div>
         </section> <!-- Our Tech Partners -->
     </main>
 
     <footer class="d-flex justify-content-between p-3" style="background-color: #0B1629;">
         <div id="cDetails" class="text-white col-md-3 d-flex flex-column">
             <h1 class="mb-4">Shangrila Microsystem</h1>
-            <span class="text-info">Call Us:</span>
+            <span class="text-info">Phone:</span>
             <span class="spanB">+977 - 01 – 4102850</span>
             <span class="text-info">Address:</span>
             <span class="spanB">Maitidevi, Kathmandu</span>
@@ -213,12 +221,12 @@
         </div>
     </footer>
 
-    <span style="background-color: #0096DB;">kkkk</span>
+    <!-- <span style="background-color: #0096DB;">kkkk</span>
     <span style="background-color: #0B1629;">kkkk</span>
     <span style="background-color: #EAEFFC;">kkkk</span>
     <span style="background-color: #F69037;">kkkk</span>
     <span style="background-color: #42BC7D;">kkkk</span>
-    <span style="background-color: #FFFFFF;">kkkk</span>
+    <span style="background-color: #FFFFFF;">kkkk</span> -->
     <script src="script.js"></script>
 </body>
 
