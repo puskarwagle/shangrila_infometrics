@@ -46,3 +46,97 @@ input[type='checkbox']:checked+.switch {
     position: absolute;
     left: -999999px;
 }
+
+
+
+.shadow-my {
+    -webkit-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
+box-shadow: 2px 4px 5px 1px rgba(0,0,0,0.75);
+}
+.carouselButton {
+    color:white;
+    border-radius: 50%;
+    background-color: #0096DB;
+    padding:1rem;
+    font-size: 1.5rem;
+    font-weight: 100 !important;
+}
+
+/* Small screen  */
+@media only screen and (max-width: 991px) {
+    h1 {
+        font-weight: bolder;
+    }
+
+    #empLogin {
+        display: none;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .navbar-brand {
+        order: 1;
+    }
+
+    #sec2 h1 {
+        text-shadow: 2px 2px #000000;
+        margin-bottom: 2rem;
+    }
+
+    #sec2 p {
+        line-height: 220%;
+        margin-bottom: 2rem;
+    }
+
+    #sec3 p {
+        line-height: 220%;
+    }
+
+    #sec4 .who, p {
+        text-align: center;
+    }
+
+    #sec4 .numbers {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #sec4 .numbers div .text-warning {
+        font-size: 2rem;
+    }
+
+    #sec4 .images img {
+        display: none;
+    }
+
+    #sec6 .mycards {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #sec6 .mycards .thiscard {
+        gap: 3rem;
+    }
+
+    #sec6 .cardtext {
+        line-height: 200%;
+    }
+
+    #sec6 .cardtext .h5 {
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    footer .icons i {
+        font-size: 1.5rem;
+    }
+}

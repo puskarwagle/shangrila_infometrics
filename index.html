@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>shreesir</title>
+    <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3 pe-3">
         <a class="navbar-brand" href="#">
-            <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            <img src="./images/logo.png" width="100" height="30" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,41 +49,38 @@
             </ul>
         </div>
 
-        <div>
-
-
-
+        <div id="toggle" style="display: none;">
             <input type="checkbox" id="toggle" class="offscreen" />
-      	    <label for="toggle" class="switch"></label>
+            <label for="toggle" class="switch"></label>
         </div>
-        <button style="background-color: #0096DB;color:#ffffff;" class="btn">Employee Login</button>
+        <button id="empLogin" style="background-color: #0096DB;color:#ffffff;" class="btn">Employee Login</button>
     </nav>
 
     <main>
-        <section class="p-1 ps-4 text-white" style="background-color: #0096DB;">News 1</section>
+        <section id="sec1" class="p-1 ps-4 text-white" style="background-color: #0096DB;">News 1</section>
 
-        <section class="p-4 text-white" style="background-image: url(https://source.unsplash.com/3tYZjGSBwbk);">
-            <div class="jumbotron col-md-10 pt-5">
+        <section id="sec2" class="text-white p-3" style="background-image: url(./images/world.jpg);">
+            <div class="jumbotron col-md-10">
                 <h1>Working towards the excellence in ensuring the Digital Governance in Nepal</h1>
-                <p class="col-md-8 mt-2" style="font-size: 0.8rem;">The Government of Nepal has introduced e-Governance
+                <p class="col-md-8 mt-2">The Government of Nepal has introduced e-Governance
                     to improve the administration of government
                     services and the relationship between public servants and the wider society.</p>
             </div>
-            <button class="btn text-white" style="background-color: #0096DB;font-size: 0.8rem;">Learn More</button>
+            <button class="btn text-white" style="background-color:#0096DB;">Learn More</button>
         </section> <!-- Working Towards -->
 
-        <section class="container text-center mt-5">
-            <span class="h3" style="border-bottom: 2px solid #42BC7D;">About</span>
-            <p class="p-5">The Government of Nepal has introduced e-Governance to improve the <br> administration of
-                government
-                services and the relationship between public servants <br> and the wider society.</p>
+        <section id="sec3" class="text-center mt-5">
+            <span class="h1 border-bottom border-success border-3">About us</span>
+            <p class="p-5">The Government of Nepal has introduced e-Governance to improve the administration of
+                government services and the relationship between public servants and the wider society.</p>
         </section> <!-- About Us -->
 
-        <section class="mb-5 d-flex">
+        <section id="sec4" class="mb-5 d-flex">
             <div class="ps-5 col-md-7">
-                <div>
-                    <span class="h1">Who we are?</span>
-                    <p class="mt-3">Aenean faucibus ultricies erat nec rhoncus. Maecenas bibendum metus eros, sed
+                <div class="whoarewe">
+                    <span class="h1 who text-center">Who we are?</span>
+                    <p class="mt-3">Aenean faucibus ultricies erat nec rhoncus. Maecenas bibendum metus
+                        eros, sed
                         elementum justo
                         fringilla non. Donec porta a magna ac cursus. Sed quis erat ut leo vulputate laoreet. Aliquam
                         euismod purus vel libero egestas, ac rhoncus erat hendrerit. Praesent eleifend arcu eget ex
@@ -94,98 +94,101 @@
                 <div class="numbers d-flex justify-content-between mt-5">
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">29+</span>
-                        <span class="text-primary font-weight-bold">Years in Business</span>
+                        <span style="font-weight: 600;" class="text-primary">Years in Business</span>
                     </div>
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">200+</span>
-                        <span class="text-primary font-weight-bold">Numbers of Employees</span>
+                        <span style="font-weight: 600;" class="text-primary">Numbers of Employees</span>
                     </div>
                     <div class="d-flex flex-column align-items-center gap-2">
                         <span class="text-warning h3">753+</span>
-                        <span class="text-primary font-weight-bold">Service Installation</span>
+                        <span style="font-weight: 600;" class="text-primary">Service Installation</span>
                     </div>
                 </div>
             </div>
-            <div class="images col-md-5" style="position:relative;">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;left:10%;width:60%;height:45%; z-index:4;" src="https://source.unsplash.com/Ao8x-IhO8hc" class="" alt="">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:40%;width:70%;height:55%;" src="https://source.unsplash.com/uIjLT4VXFIU" class="" alt="">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;left:50%;top:25%;width:50%;height:75%;" src="https://source.unsplash.com/ikJ60IPOxKw" class="" alt="">
+            <div class="images col-md-5 border" style="position:relative;">
+                <img style="border-radius:5px;border:2px solid rgb(34, 15, 157);position:absolute;top:0%;left:10%;width:259.704px;height:173.136px; z-index:4;"
+                    src="https://source.unsplash.com/Ao8x-IhO8hc" class="" alt="">
+                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:40%;left:5%;width:259.704px;height:173.136px;"
+                    src="https://source.unsplash.com/uIjLT4VXFIU" class="" alt="">
+                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;left:30%;top:25%;width:50%;height:75%;"
+                    src="https://source.unsplash.com/ikJ60IPOxKw" class="" alt="">
             </div>
         </section> <!-- Who we are ? -->
 
-        <section class="text-center text-white p-5"
+        <section id="sec5" class="text-center text-white p-5"
             style="background-image: url(https://source.unsplash.com/3tYZjGSBwbk);">
-            <span class="h3" style="border-bottom: 2px solid #42BC7D;">Our Services</span>
-            <p class="mt-5">The Government of Nepal has introduced e-Governance to improve the <br> administration of
+            <span class="h1 border-bottom border-success border-3">Our Services</span>
+            <p class="mt-5">The Government of Nepal has introduced e-Governance to improve the administration of
                 government
-                services and the relationship between public servants <br> and the wider society.</p>
+                services and the relationship between public servants and the wider society.</p>
         </section> <!-- Our Services -->
 
-        <section class="mb-5">
-            <div class="d-flex gap-3 pb-5 pt-3 justify-content-around" style="background-color: #E5F4FB;">
-                <div class="col-md-3 shadow-lg bg-white text-center rounded p-2">
-                    <img class="mb-3" width="100" height="100" src="https://source.unsplash.com/3tYZjGSBwbk" alt="Card
-                        image cap">
-                    <div class="">
-                        <p style="font-size: 0.9rem;font-weight: 510;" class="">PMIS</p>
-                        <p style="font-size: 0.9rem;" class="card-text">Some quick example text to build on the card
-                            title and make up the bulk of the card's
-                            content.</p>
+        <section id="sec6" class="mb-5">
+            <div class="mycards d-flex gap-3 pb-5 pt-3 justify-content-around" style="background-color: #E5F4FB;">
+                <div class="thiscard col-md-3 shadow-lg bg-white text-center rounded p-2">
+                    <img class="mb-5" width="90" height="90" src="./images/erp.png" alt="Card image cap">
+                    <div class="cardtext">
+                        <p class="h5">MUN ERP</p>
+                        <p class="card-text">Some quick example text to build on the card
+                            title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="col-md-3 shadow bg-white text-center rounded p-2">
-                    <img class="mb-3" width="100" height="100" src="https://source.unsplash.com/3tYZjGSBwbk" alt="Card
-                        image cap">
-                    <div class="">
-                        <p style="font-size: 0.9rem;font-weight: 510;" class="">PMIS</p>
-                        <p style="font-size: 0.9rem;" class="card-text">Some quick example text to build on the card
-                            title and make up the bulk of the card's
-                            content.</p>
+                <div class="thiscard col-md-3 shadow bg-white text-center rounded p-2">
+                    <img class="mb-5" width="90" height="90" src="./images/eye.png" alt="Card image cap">
+                    <div class="cardtext">
+                        <p class="h5">PMIS</p>
+                        <p class="card-text">Some quick example text to build on the card
+                            title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="col-md-3 shadow bg-white text-center rounded p-2">
-                    <img class="mb-3" width="100" height="100" src="https://source.unsplash.com/3tYZjGSBwbk" alt="Card
-                        image cap">
-                    <div class="">
-                        <p style="font-size: 0.9rem;font-weight: 510;" class="">PMIS</p>
-                        <p style="font-size: 0.9rem;" class="card-text">Some quick example text to build on the card
-                            title and make up the bulk of the card's
-                            content.</p>
+                <div class="thiscard col-md-3 shadow bg-white text-center rounded p-2">
+                    <img class="mb-5" width="90" height="90" src="./images/python.svg" alt="Card image cap">
+                    <div class="cardtext">
+                        <p class="h5">PPIS</p>
+                        <p class="card-text">Some quick example text to build on the card
+                            title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
             </div> <!-- Services -->
 
             <div class="p-5 clients text-center" style="background-color: #EAEFFC;">
-                <span class="h3" style="border-bottom: 2px solid #42BC7D;">Our Happy Clients</span>
-                <div class="d-flex justify-content-between mt-5">
-                    <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" height="140" alt="clientimg1">
-                    <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" height="140" class=""
-                        alt="clientimg1">
-                    <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" height="140" class=""
-                        alt="clientimg1">
-                    <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" height="140" class=""
-                        alt="clientimg1">
-                    <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" height="140" class=""
-                        alt="clientimg1">
+                <span class="h1 border-bottom border-success border-3">Our Happy Clients</span>
+                <div class="d-flex justify-content-between align-items-center mt-5">
+                    <div class="carouselButton happyPrev">
+                        <i class="fas fa-angle-double-left"></i>
+                    </div>
+                    <div class="imgho rounded-4 pt-5 pb-5 pe-3 ps-3 shadow-my bg-white">
+                        <img id="happyCarouselImage" src="./images/embelm.png" width="120" height="100" class=""
+                            alt="clientimg1">
+                    </div>
+                    <div class="carouselButton happyNext">
+                        <i class="fas fa-angle-double-right"></i>
+                    </div>
                 </div>
             </div> <!-- Our Happy Clients -->
         </section> <!-- Services and Happy clients -->
 
-        <section class="container techPartners text-center mb-5">
-            <span class="h3" style="border-bottom: 2px solid #42BC7D;">Technology Partners</span>
-            <div class="d-flex justify-content-between mt-5">
-                <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" class="" alt="techPartners_IMG">
-                <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" class="" alt="techPartners_IMG">
-                <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" class="" alt="techPartners_IMG">
-                <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" class="" alt="techPartners_IMG">
-                <img src="https://source.unsplash.com/3tYZjGSBwbk" width="160" class="" alt="techPartners_IMG">
+        <section id="sec7" class="container techPartners text-center mb-5 pe-5 ps-5">
+            <span class="h1 border-bottom border-success border-3">Technology Partners</span>
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <div class="carouselButton techPrev">
+                    <i class="fas fa-angle-double-left"></i>
+                </div>
+                <div class="imgho rounded-4 pt-5 pb-5 pe-3 ps-3 shadow-my bg-white">
+                    <img id="techCarouselImage" src="./images/embelm.png" width="120" height="100" class=""
+                        alt="clientimg1">
+                </div>
+                <div class="carouselButton techNext">
+                    <i class="fas fa-angle-double-right"></i>
+                </div>
             </div>
         </section> <!-- Our Tech Partners -->
     </main>
 
-    <footer class="d-flex justify-content-between p-5" style="background-color: #0B1629;">
+    <footer class="d-flex justify-content-between p-3" style="background-color: #0B1629;">
         <div id="cDetails" class="text-white col-md-3 d-flex flex-column">
-            <h5 class="mb-4">Shangrila Microsystem</h5>
+            <h1 class="mb-4">Shangrila Microsystem</h1>
             <span class="text-info">Call Us:</span>
             <span class="spanB">+977 - 01 – 4102850</span>
             <span class="text-info">Address:</span>
@@ -194,13 +197,13 @@
             <span class="spanB">info@shangrilagroup.com.np</span>
         </div>
         <div class="col-md-3">
-            <iframe
+            <iframe class="rounded"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14130.104023293115!2d85.33724784851069!3d27.701041176144106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a383b0d657%3A0xc015b104b0451efa!2sShangrila%20Microsystem!5e0!3m2!1sen!2snp!4v1679909937538!5m2!1sen!2snp&z=10"
                 style="min-width:100%;border:0;height:100%;" allowfullscreen="false" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="socials col-md-3">
-            <span class="text-white">Social</span>
+            <span class="text-white h2">Social</span>
             <div class="icons d-flex gap-4 mt-3">
                 <i class="fab fa-facebook-f fa-icon" style="color: #ffffff;"></i>
                 <i class="fab fa-instagram fa-icon" style="color: #ffffff;"></i>
@@ -210,13 +213,13 @@
         </div>
     </footer>
 
-    <!-- <span style="background-color: #0096DB;">kkkk</span>
+    <span style="background-color: #0096DB;">kkkk</span>
     <span style="background-color: #0B1629;">kkkk</span>
     <span style="background-color: #EAEFFC;">kkkk</span>
     <span style="background-color: #F69037;">kkkk</span>
     <span style="background-color: #42BC7D;">kkkk</span>
-    <span style="background-color: #FFFFFF;">kkkk</span> -->
-    <script src="index.js"></script>
+    <span style="background-color: #FFFFFF;">kkkk</span>
+    <script src="script.js"></script>
 </body>
 
 </html>
