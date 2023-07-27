@@ -38,8 +38,6 @@
 }
 .whoarewe img {
     display: none;
-    border-radius:5px;
-    border:2px solid rgb(255,193,7);
 }
 
 /* Small screen  */
@@ -108,10 +106,18 @@
         font-size: 2rem;
     }
 
+    #sec4 .whoarewe img {
+        display: flex;
+        border-radius:5px;
+        border:2px solid #F69037;
+        aspect-ratio: 1/1;
+    }
     #sec4 .images img {
         display: none;
     }
-
+    #sec4 .whomain {
+        width:100%;
+    }
     #sec6 .mycards {
         flex-direction: column;
         padding: 1rem;

@@ -11,9 +11,6 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
     <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Google Font -->
@@ -23,7 +20,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3 pe-3">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3 pe-3">
         <a class="navbar-brand" href="#">
             <img src="./images/logo.png" width="100" height="30" alt="">
         </a>
@@ -63,8 +60,39 @@
             </div>
         </div>
 
-        <button id="empLogin" style="background-color: #0096DB;color:#ffffff;font-size: smaller;" class="btn">Employee
-            Login</button>
+        <button id="empLogin" style="background-color: #0096DB;color:#ffffff;font-size: smaller;" class="btn">Employee Login</button>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" width="100" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div style="margin-left:auto;" class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">Products</a>
+                </div>
+            </div>
+            <div class="toggleContainer d-flex flex-column align-items-center gap-1">
+                <img src="./images/nepal.png" alt="" id="languageImage" height="15" width="10">
+                <div class="language-switch">
+                    <input type="checkbox" id="language-toggle">
+                    <label for="language-toggle">
+                        <span class="language-label">en</span>
+                        <span class="language-label">np</span>
+                    </label>
+                </div>
+            </div>
+            <button id="empLogin" style="background-color: #0096DB;color:#ffffff;font-size: smaller;" class="btn">Employee Login</button>
+        </div>
     </nav>
 
     <main>
@@ -88,14 +116,18 @@
         </section> <!-- About Us -->
 
         <section id="sec4" class="mb-5 d-flex">
-            <div class="col-md-7">
+            <div class="col-md-7 whomain">
                 <div class="whoarewe p-3">
                     <p class="h1 who">Who we are?</p>
-                    <p class="">Shangrila Informatrics (P.) Ltd. (Shangrila) is a company established with a concrete aim of providing complete IT solutions to the end-users.</p>
+                    <p class="">Shangrila Informatrics (P.) Ltd. (Shangrila) is a company established with a concrete
+                        aim of providing complete IT solutions to the end-users.</p>
                     <img width="100%" src="https://source.unsplash.com/Ao8x-IhO8hc" alt="" class="smscim mb-3">
                     <img width="100%" src="https://source.unsplash.com/uIjLT4VXFIU" alt="" class="smscim mb-3">
                     <img width="100%" src="https://source.unsplash.com/ikJ60IPOxKw" alt="" class="smscim mb-3">
-                    <p>The establisment of the company dates back to 2052 B.S. when a team of IT experts laid down the foundation stone of the company as a small industry named Shangrila Software and Computer Services which is now incorporated as Shangrila Informatics (P.) Ltd. as per the Company Act 2053 of Government of Nepal.</p>
+                    <p>The establisment of the company dates back to 2052 B.S. when a team of IT experts laid down the
+                        foundation stone of the company as a small industry named Shangrila Software and Computer
+                        Services which is now incorporated as Shangrila Informatics (P.) Ltd. as per the Company Act
+                        2053 of Government of Nepal.</p>
                 </div>
                 <div class="numbers d-flex justify-content-between mt-5 p-3">
                     <div class="d-flex flex-column align-items-center gap-2">
@@ -113,26 +145,27 @@
                 </div>
             </div>
             <div class="images col-md-5" style="position:relative;">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:0%;left:10%;width:259.704px;height:173.136px; z-index:4;"
+                <img style="border-radius:5px;border:2px solid #F69037;position:absolute;top:0%;left:10%;width:60%;height:45%; z-index:4;"
                     src="https://source.unsplash.com/Ao8x-IhO8hc" alt="">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;top:40%;left:5%;width:259.704px;height:173.136px;"
+                <img style="border-radius:5px;border:2px solid #F69037;position:absolute;top:40%;left:0%;width:50%;height:50%;"
                     src="https://source.unsplash.com/uIjLT4VXFIU" alt="">
-                <img style="border-radius:5px;border:2px solid rgb(255,193,7);position:absolute;left:30%;top:25%;width:50%;height:75%;"
+                <img style="border-radius:5px;border:2px solid #F69037;position:absolute;left:40%;top:30%;width:55%;height:70%;"
                     src="https://source.unsplash.com/ikJ60IPOxKw" alt="">
             </div>
+
         </section> <!-- Who we are ? -->
 
         <section id="sec5" class="text-center text-white p-5"
-            style="background-image: url(https://source.unsplash.com/3tYZjGSBwbk);">
+            style="background-image: url(./images/office_folks.png);background-size: cover;">
             <span class="h1 border-my">Our Services</span>
             <p class="mt-5">The Government of Nepal has introduced e-Governance to improve the administration of
                 government services and the relationship between public servants and the wider society.</p>
         </section> <!-- Our Services -->
 
         <section id="sec6" class="mb-5">
-            <div class="mycards d-flex gap-3 pb-5 pt-3 justify-content-around" style="background-color: #E5F4FB;">
+            <div class="mycards row gap-3 p-3" style="background-color: #E5F4FB;">
 
-                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
+                <div class="thiscard col shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/erp.png" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">MUN ERP</p>
@@ -140,7 +173,7 @@
                             title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
+                <div class="thiscard col shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/eye.png" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">PMIS</p>
@@ -148,7 +181,7 @@
                             title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-                <div class="thiscard col-md-3 shadow-my bg-white text-center rounded p-2">
+                <div class="thiscard col shadow-my bg-white text-center rounded p-2">
                     <img class="mb-5" width="90" height="90" src="./images/python.svg" alt="Card image cap">
                     <div class="cardtext">
                         <p class="h5">PPIS</p>
@@ -184,7 +217,7 @@
         </section> <!-- Services and Happy clients -->
 
         <section id="sec7" class="techPartners text-center mb-5 pe-5 ps-5">
-            <span class="h1 border-my">Technology Partners</span>
+            <span class="h1 border-my text-nowrap">Technology Partners</span>
             <div class="mycarousel justify-content-between align-items-center mt-5">
                 <div class="carouselButton techPrev">
                     <i class="fas fa-angle-double-left"></i>
@@ -234,13 +267,19 @@
         </div>
     </footer>
 
-    <!-- <span style="background-color: #0096DB;">kkkk</span>
+    <span style="background-color: #0096DB;">kkkk</span>
     <span style="background-color: #0B1629;">kkkk</span>
     <span style="background-color: #EAEFFC;">kkkk</span>
     <span style="background-color: #F69037;">kkkk</span>
     <span style="background-color: #42BC7D;">kkkk</span>
-    <span style="background-color: #FFFFFF;">kkkk</span> -->
+    <span style="background-color: #FFFFFF;">kkkk</span>
     <script src="script.js"></script>
+    <!-- Add the following scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
